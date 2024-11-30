@@ -17,10 +17,10 @@
 ## 模型训练
 type`fall-detection.py`为训练模型文件。
 ### 参数介绍
-- type'file_label'：模型选用哪几个标签的数据进行训练
-- type'num_label'：模型标签个数（数据集中一共有16类数据）
-- type`base_dir`：数据地址
-- type`batch_size `：数据管道一批输入模型多少条数据
-- type'collect_samples_and_labels()':p=重叠时间窗/时间窗
+- 'file_label'：模型选用哪几个标签的数据进行训练
+- 'num_label'：模型标签个数（数据集中一共有16类数据）
+- `base_dir`：数据地址
+- `batch_size `：数据管道一批输入模型多少条数据
+- 'collect_samples_and_labels()':p=重叠时间窗/时间窗
 ### 损失函数
 两个模型均采用自定义的带权交叉熵函数，权值由标签比例得到，具体计算公式见type`collect_samples_and_label()`函数中w的计算
